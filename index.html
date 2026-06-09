@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CJ Saddles</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fafafa;
+    color:#111;
+    font-family:'Inter',sans-serif;
+}
+
+.container{
+    text-align:center;
+    padding:40px;
+    width:100%;
+    max-width:550px;
+    animation:fadeIn 1.2s ease;
+}
+
+.logo{
+    width:200px;
+    max-width:70%;
+    margin-bottom:50px;
+}
+
+.line{
+    width:60px;
+    height:1px;
+    background:#111;
+    margin:0 auto 35px;
+    opacity:.3;
+}
+
+.name{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+    font-weight:300;
+    letter-spacing:4px;
+    margin-bottom:35px;
+}
+
+.button{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    background:#111;
+    padding:16px 42px;
+    border-radius:50px;
+    letter-spacing:2px;
+    font-size:.85rem;
+    text-transform:uppercase;
+    transition:.35s ease;
+    border:1px solid #111;
+}
+
+.button:hover{
+    background:transparent;
+    color:#111;
+    transform:translateY(-2px);
+}
+
+.footer{
+    margin-top:60px;
+    font-size:.75rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#777;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:480px){
+
+    .logo{
+        width:160px;
+    }
+
+    .name{
+        font-size:2.2rem;
+        letter-spacing:3px;
+    }
+
+    .button{
+        width:100%;
+        max-width:280px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <img src="CJ.jpg" alt="CJ Saddles" class="logo">
+
+    <div class="line"></div>
+
+    <div class="name">CJ Western Saddlery</div>
+
+    <a href="https://www.facebook.com/CJwesternnyergek/" class="button">
+        Nyeregkínálat
+    </a>
+
+    <div class="footer">
+        Cziráki Júlia
+    </div>
+
+</div>
+
+</body>
+</html>
